@@ -5,6 +5,8 @@ import { ArchetypeSection } from './ArchetypeSection';
 import { PersonalityMeter } from './PersonalityMeter';
 import { BigFiveTraits } from './BigFiveTraits';
 import { SkillStrengths } from './SkillStrengths';
+import { SkillsProfile } from './SkillsProfile';
+import { SkillsImprovement } from './SkillsImprovement';
 import { AIInsights } from './AIInsights';
 import { CareerSuggestions } from './CareerSuggestions';
 import { SupportiveFooter } from './SupportiveFooter';
@@ -33,8 +35,14 @@ export const SATReportTemplate: React.FC<SATReportTemplateProps> = ({
       {/* Big Five Traits */}
       <BigFiveTraits traits={data.bigFiveTraits} />
       
+      {/* Skills Profile */}
+      <SkillsProfile skills={data.skills} />
+      
       {/* Skills Section */}
       <SkillStrengths skills={data.skills} />
+      
+      {/* Skills Improvement */}
+      <SkillsImprovement skills={data.skills} />
       
       {/* AI Insights */}
       <AIInsights insights={data.aiInsights} />
