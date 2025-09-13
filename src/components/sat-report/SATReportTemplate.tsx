@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { StudentHeader } from './StudentHeader';
 import { ArchetypeSection } from './ArchetypeSection';
 import { PersonalityMeter } from './PersonalityMeter';
+import { PersonalityProfile } from './PersonalityProfile';
 import { BigFiveTraits } from './BigFiveTraits';
 import { SkillStrengths } from './SkillStrengths';
 import { SkillsProfile } from './SkillsProfile';
@@ -31,6 +32,9 @@ export const SATReportTemplate: React.FC<SATReportTemplateProps> = ({
       
       {/* Personality Meter */}
       <PersonalityMeter score={data.personalityMeter} />
+      
+      {/* Personality Profile */}
+      <PersonalityProfile data={data.personalityMeter} />
       
       {/* Big Five Traits */}
       <BigFiveTraits traits={data.bigFiveTraits} />
