@@ -2,41 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* SAT Report Design System - Emotionally Supportive & Youth-Friendly
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - warm and welcoming */
+    --background: 35 100% 99%;
+    --foreground: 215 25% 27%;
 
+    /* Card system - soft and inviting */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand colors - celebratory and inspiring */
+    --primary: 217 91% 60%; /* Soft blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 165 77% 85%; /* Mint green */
+    --secondary-foreground: 165 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 100% 97%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 320 65% 75%; /* Coral pink */
+    --accent-foreground: 320 25% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Additional brand colors for the report */
+    --coral: 14 91% 71%; /* Warm coral */
+    --coral-foreground: 14 25% 25%;
+    
+    --violet: 270 91% 82%; /* Soft violet */
+    --violet-foreground: 270 25% 25%;
+    
+    --mint: 165 77% 85%; /* Fresh mint */
+    --mint-foreground: 165 25% 25%;
+    
+    --sunshine: 48 100% 88%; /* Gentle yellow */
+    --sunshine-foreground: 48 25% 25%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Progress and success colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI elements */
+    --border: 35 20% 90%;
+    --input: 35 20% 90%;
+    --ring: 217 91% 60%;
+
+    --radius: 1rem;
+
+    /* Beautiful gradients for the report */
+    --gradient-celebration: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-growth: linear-gradient(135deg, hsl(var(--mint)), hsl(var(--sunshine)));
+    --gradient-strength: linear-gradient(135deg, hsl(var(--coral)), hsl(var(--violet)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for depth and warmth */
+    --shadow-soft: 0 4px 24px -2px hsl(var(--primary) / 0.1);
+    --shadow-celebration: 0 8px 32px -4px hsl(var(--accent) / 0.2);
+    --shadow-card: 0 2px 16px -2px hsl(var(--foreground) / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +139,60 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-primary;
+  }
+}
+
+/* Custom utilities for the SAT Report */
+@layer utilities {
+  .gradient-celebration {
+    background: var(--gradient-celebration);
+  }
+  
+  .gradient-growth {
+    background: var(--gradient-growth);
+  }
+  
+  .gradient-strength {
+    background: var(--gradient-strength);
+  }
+  
+  .shadow-celebration {
+    box-shadow: var(--shadow-celebration);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .animate-celebration {
+    animation: celebration 0.6s ease-out;
+  }
+}
+
+/* Celebration animation */
+@keyframes celebration {
+  0% {
+    transform: scale(0.95) rotate(-1deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.02) rotate(0.5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
   }
 }

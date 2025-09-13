@@ -47,6 +47,31 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        /* SAT Report brand colors */
+        coral: {
+          DEFAULT: "hsl(var(--coral))",
+          foreground: "hsl(var(--coral-foreground))",
+        },
+        violet: {
+          DEFAULT: "hsl(var(--violet))",
+          foreground: "hsl(var(--violet-foreground))",
+        },
+        mint: {
+          DEFAULT: "hsl(var(--mint))",
+          foreground: "hsl(var(--mint-foreground))",
+        },
+        sunshine: {
+          DEFAULT: "hsl(var(--sunshine))",
+          foreground: "hsl(var(--sunshine-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +82,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        'primary': ['Poppins', 'system-ui', 'sans-serif'],
+        'secondary': ['Nunito', 'system-ui', 'sans-serif'],
+        'display': ['Fredoka', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",
