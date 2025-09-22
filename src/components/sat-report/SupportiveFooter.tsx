@@ -8,10 +8,10 @@ export const SupportiveFooter: React.FC = () => {
     <Card className="shadow-card bg-gradient-to-r from-mint/20 to-sunshine/20 p-8">
       <div className="text-center mb-6">
         <div className="text-4xl mb-3">🎊</div>
-        <h3 className="text-2xl font-display font-semibold text-foreground mb-2">
+        <h3 className="text-2xl font-display font-semibold text-black mb-2">
           You're Amazing! Keep Growing! 🌱
         </h3>
-        <p className="text-muted-foreground font-primary max-w-md mx-auto">
+        <p className="text-black font-primary max-w-md mx-auto">
           This report is just the beginning of your incredible journey. Every step you take is progress worth celebrating.
         </p>
       </div>
@@ -20,10 +20,10 @@ export const SupportiveFooter: React.FC = () => {
         {/* Share with mentor */}
         <Card className="bg-white/60 backdrop-blur-sm p-4 border border-white/40 text-center hover:shadow-soft transition-all duration-300">
           <Share2 className="w-8 h-8 text-coral mx-auto mb-2" />
-          <h4 className="font-display font-semibold text-foreground mb-2">
+          <h4 className="font-display font-semibold text-black mb-2">
             Share Your Results 💌
           </h4>
-          <p className="text-xs text-muted-foreground font-primary mb-3">
+          <p className="text-xs text-black font-primary mb-3">
             Show a parent, teacher, or mentor what makes you special
           </p>
           <Button 
@@ -38,10 +38,10 @@ export const SupportiveFooter: React.FC = () => {
         {/* Set goals */}
         <Card className="bg-white/60 backdrop-blur-sm p-4 border border-white/40 text-center hover:shadow-soft transition-all duration-300">
           <Target className="w-8 h-8 text-primary mx-auto mb-2" />
-          <h4 className="font-display font-semibold text-foreground mb-2">
+          <h4 className="font-display font-semibold text-black mb-2">
             Set Your Goals 🚀
           </h4>
-          <p className="text-xs text-muted-foreground font-primary mb-3">
+          <p className="text-xs text-black font-primary mb-3">
             Pick one thing from this report to work on this month
           </p>
           <Button 
@@ -56,10 +56,10 @@ export const SupportiveFooter: React.FC = () => {
         {/* Connect with others */}
         <Card className="bg-white/60 backdrop-blur-sm p-4 border border-white/40 text-center hover:shadow-soft transition-all duration-300">
           <Users className="w-8 h-8 text-violet mx-auto mb-2" />
-          <h4 className="font-display font-semibold text-foreground mb-2">
+          <h4 className="font-display font-semibold text-black mb-2">
             Find Your Tribe 🤝
           </h4>
-          <p className="text-xs text-muted-foreground font-primary mb-3">
+          <p className="text-xs text-black font-primary mb-3">
             Connect with others who share your strengths and interests
           </p>
           <Button 
@@ -76,10 +76,10 @@ export const SupportiveFooter: React.FC = () => {
       <div className="mt-8 text-center">
         <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 border border-white/40 max-w-lg mx-auto">
           <Heart className="w-6 h-6 text-coral mx-auto mb-2" />
-          <p className="font-secondary font-semibold text-foreground italic">
+          <p className="font-secondary font-semibold text-black italic">
             "Every expert was once a beginner. Every pro was once an amateur. Every icon was once an unknown."
           </p>
-          <p className="text-sm text-muted-foreground font-primary mt-2">
+          <p className="text-sm text-black font-primary mt-2">
             — Your journey starts now ✨
           </p>
         </div>

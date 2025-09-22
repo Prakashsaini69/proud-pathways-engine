@@ -41,11 +41,11 @@ export const AIInsights: React.FC<AIInsightsProps> = ({ insights }) => {
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Sparkles className="w-6 h-6 text-primary" />
-          <h3 className="text-2xl font-display font-semibold text-foreground">
+          <h3 className="text-2xl font-display font-semibold text-black">
             AI-Powered Insights About You
           </h3>
         </div>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           Here's what makes you amazing — and what'll make you unstoppable
         </p>
       </div>
@@ -64,14 +64,14 @@ export const AIInsights: React.FC<AIInsightsProps> = ({ insights }) => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="text-2xl">{insight.emoji}</div>
-                    <h4 className="font-display font-semibold text-foreground text-left">
+                    <h4 className="font-display font-semibold text-black text-left">
                       {insight.title}
                     </h4>
                   </div>
                    {openInsights.includes(insight.type) ? (
-                    <ChevronDown className="w-5 h-5 text-foreground/60 transition-transform" />
+                    <ChevronDown className="w-5 h-5 text-black transition-transform" />
                   ) : (
-                    <ChevronRight className="w-5 h-5 text-foreground/60 transition-transform" />
+                    <ChevronRight className="w-5 h-5 text-black transition-transform" />
                   )}
                 </div>
               </Card>
@@ -79,7 +79,7 @@ export const AIInsights: React.FC<AIInsightsProps> = ({ insights }) => {
             
             <CollapsibleContent className="pt-2">
               <div className="bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-white/40 ml-2 shadow-soft">
-                <p className="font-primary text-foreground leading-relaxed whitespace-pre-line">
+                <p className="font-primary text-black leading-relaxed whitespace-pre-line">
                   {insight.content}
                 </p>
               </div>

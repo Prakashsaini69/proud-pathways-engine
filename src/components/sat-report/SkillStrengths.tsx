@@ -26,11 +26,11 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Zap className="w-6 h-6 text-success" />
-            <h3 className="text-xl font-display font-semibold text-foreground">
+            <h3 className="text-xl font-display font-semibold text-black">
               Your Power Skills 💪
             </h3>
           </div>
-          <p className="text-sm text-muted-foreground font-primary">
+          <p className="text-sm text-black font-primary">
             These are your natural superpowers
           </p>
         </div>
@@ -42,7 +42,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">{skill.icon}</div>
                   <div>
-                    <h4 className="font-primary font-semibold text-foreground">
+                    <h4 className="font-primary font-semibold text-black">
                       {skill.name}
                     </h4>
                     <Badge variant="secondary" className="text-xs bg-success/20 text-success-foreground">
@@ -57,7 +57,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 className="h-2 mb-3 bg-white/40"
               />
               
-              <p className="text-sm text-foreground/80 font-primary italic">
+              <p className="text-sm text-black font-primary italic">
                 {skill.description}
               </p>
             </div>
@@ -70,11 +70,11 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-2 mb-2">
             <TrendingUp className="w-6 h-6 text-warning" />
-            <h3 className="text-xl font-display font-semibold text-foreground">
+            <h3 className="text-xl font-display font-semibold text-black">
               Level Up Next 🚀
             </h3>
           </div>
-          <p className="text-sm text-muted-foreground font-primary">
+          <p className="text-sm text-black font-primary">
             Amazing growth opportunities ahead
           </p>
         </div>
@@ -86,7 +86,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">{skill.icon}</div>
                   <div>
-                    <h4 className="font-primary font-semibold text-foreground">
+                    <h4 className="font-primary font-semibold text-black">
                       {skill.name}
                     </h4>
                     <Badge variant="secondary" className="text-xs bg-warning/20 text-warning-foreground">
@@ -101,7 +101,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 className="h-2 mb-3 bg-white/40"
               />
               
-              <p className="text-sm text-foreground/80 font-primary italic">
+              <p className="text-sm text-black font-primary italic">
                 {skill.description}
               </p>
             </div>

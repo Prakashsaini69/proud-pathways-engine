@@ -21,7 +21,7 @@ export const ArchetypeSection: React.FC<ArchetypeSectionProps> = ({ archetype })
         <div className="flex justify-center mb-6">
           <Badge 
             variant="secondary" 
-            className="px-6 py-3 text-lg font-display font-semibold bg-gradient-strength text-white border-0 shadow-soft"
+            className="px-6 py-3 text-lg font-display font-semibold bg-gradient-strength text-black border-0 shadow-soft"
           >
             <Crown className="w-5 h-5 mr-2" />
             Your Archetype
@@ -30,11 +30,11 @@ export const ArchetypeSection: React.FC<ArchetypeSectionProps> = ({ archetype })
         
         {/* Main title */}
         <div className="mb-6">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-black mb-4">
             <span className="text-3xl mr-3">{archetype.icon}</span>
             {archetype.title}
           </h2>
-          <p className="text-lg font-primary text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg font-primary text-black max-w-2xl mx-auto leading-relaxed">
             {archetype.description}
           </p>
         </div>
@@ -43,7 +43,7 @@ export const ArchetypeSection: React.FC<ArchetypeSectionProps> = ({ archetype })
         <div className="relative max-w-lg mx-auto">
           <Quote className="absolute -top-2 -left-2 w-8 h-8 text-coral opacity-30" />
           <blockquote className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-white/40 shadow-soft">
-            <p className="text-xl font-secondary font-semibold text-foreground italic">
+            <p className="text-xl font-secondary font-semibold text-black italic">
               "{archetype.motivationalQuote}"
             </p>
           </blockquote>

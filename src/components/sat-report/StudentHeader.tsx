@@ -9,7 +9,7 @@ interface StudentHeaderProps {
 
 export const StudentHeader: React.FC<StudentHeaderProps> = ({ student }) => {
   return (
-    <Card className="relative overflow-hidden shadow-celebration bg-gradient-to-r from-primary to-accent text-white">
+    <Card className="relative overflow-hidden shadow-celebration bg-gradient-to-r from-primary to-accent text-black">
       {/* Decorative elements */}
       <div className="absolute top-4 right-4 animate-bounce">
         <Sparkles className="w-8 h-8 text-sunshine opacity-80" />
@@ -22,7 +22,7 @@ export const StudentHeader: React.FC<StudentHeaderProps> = ({ student }) => {
         <div className="flex items-center gap-6">
           {/* Profile Avatar */}
           <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30">
-            <GraduationCap className="w-10 h-10 text-white" />
+            <GraduationCap className="w-10 h-10 text-black" />
           </div>
           
           {/* Student Info */}
@@ -30,7 +30,7 @@ export const StudentHeader: React.FC<StudentHeaderProps> = ({ student }) => {
             <h1 className="text-3xl md:text-4xl font-display font-semibold mb-2">
               {student.name}
             </h1>
-            <div className="flex items-center gap-4 text-white/90 mb-2">
+            <div className="flex items-center gap-4 text-black mb-2">
               <span className="font-primary font-medium text-lg">Age {student.grade}</span>
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
@@ -40,7 +40,7 @@ export const StudentHeader: React.FC<StudentHeaderProps> = ({ student }) => {
           </div>
           
           {/* School Info */}
-          <div className="text-right text-white/90">
+          <div className="text-right text-black">
             <div className="text-sm font-primary font-medium">Assessment Report</div>
             <div className="text-xs">Class of 2024</div>
           </div>

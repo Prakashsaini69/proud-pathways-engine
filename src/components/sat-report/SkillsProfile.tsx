@@ -99,7 +99,7 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-lg font-bold text-foreground">{percentage}%</span>
+          <span className="text-lg font-bold text-black">{percentage}%</span>
         </div>
       </div>
     );
@@ -108,10 +108,10 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
   return (
     <Card className="shadow-card p-6">
       <div className="mb-8">
-        <h3 className="text-2xl font-display font-semibold text-foreground mb-2">
+        <h3 className="text-2xl font-display font-semibold text-black mb-2">
           Skills Profile
         </h3>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           Over the past 4 years, I have worked on developing the following skills.
         </p>
       </div>
@@ -130,10 +130,10 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
                   size={80}
                 />
               </div>
-              <h4 className="font-primary font-semibold text-sm text-foreground mb-1">
+              <h4 className="font-primary font-semibold text-sm text-black mb-1">
                 {category.name}
               </h4>
-              <div className="flex items-center justify-center gap-1 text-xs text-foreground/70">
+              <div className="flex items-center justify-center gap-1 text-xs text-black">
                 <span className="text-base">{category.icon}</span>
                 <span>{category.completedModules} Modules</span>
               </div>
@@ -146,17 +146,17 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
       <div className="grid md:grid-cols-5 gap-4">
         {skillCategories.map((category, categoryIndex) => (
           <div key={categoryIndex} className="space-y-3">
-            <h5 className="font-primary font-semibold text-sm text-foreground border-b pb-1">
+            <h5 className="font-primary font-semibold text-sm text-black border-b pb-1">
               {category.name.split(' ')[0]} Skills
             </h5>
             
             {category.skills.map((skill, skillIndex) => (
               <div key={skillIndex} className="space-y-1">
                 <div className="flex justify-between items-center">
-                  <span className="text-xs font-primary text-foreground/70">
+                  <span className="text-xs font-primary text-black">
                     {skill.name}
                   </span>
-                  <span className="text-xs font-semibold text-foreground">
+                  <span className="text-xs font-semibold text-black">
                     {skill.score}%
                   </span>
                 </div>

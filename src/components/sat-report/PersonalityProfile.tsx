@@ -79,10 +79,10 @@ export const PersonalityProfile: React.FC<PersonalityProfileProps> = ({ data }) 
   return (
     <Card className="p-6 bg-gradient-subtle border-0 shadow-celebration animate-fade-in">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-display font-bold text-foreground mb-2">
+        <h2 className="text-2xl font-display font-bold text-black mb-2">
           ✨ Your Personality Dimensions
         </h2>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           Discover the unique blend of traits that make you, you!
         </p>
       </div>
@@ -110,8 +110,8 @@ export const PersonalityProfile: React.FC<PersonalityProfileProps> = ({ data }) 
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">{type.emoji}</span>
                   <div>
-                    <h3 className="font-display font-bold text-lg">{type.name}</h3>
-                    <p className="text-sm text-muted-foreground">{type.description}</p>
+                    <h3 className="font-display font-bold text-lg text-black">{type.name}</h3>
+                    <p className="text-sm text-black">{type.description}</p>
                   </div>
                 </div>
                 <Badge variant="secondary" className="font-bold">
@@ -132,8 +132,8 @@ export const PersonalityProfile: React.FC<PersonalityProfileProps> = ({ data }) 
       </div>
 
       <div className="mt-6 p-4 bg-background/40 rounded-xl border border-border/20">
-        <p className="text-center text-sm text-muted-foreground font-primary">
-          <span className="font-semibold text-foreground">Remember:</span> Your personality is beautifully complex! 
+        <p className="text-center text-sm text-black font-primary">
+          <span className="font-semibold text-black">Remember:</span> Your personality is beautifully complex! 
           These dimensions work together to create your unique social style. 🌈
         </p>
       </div>

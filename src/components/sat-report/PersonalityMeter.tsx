@@ -41,10 +41,10 @@ export const PersonalityMeter: React.FC<PersonalityMeterProps> = ({ score }) => 
   return (
     <Card className="shadow-card p-6">
       <div className="text-center mb-6">
-        <h3 className="text-2xl font-display font-semibold text-foreground mb-2">
+        <h3 className="text-2xl font-display font-semibold text-black mb-2">
           Your Social Energy Style
         </h3>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           Everyone has their own way of connecting with the world
         </p>
       </div>
@@ -52,7 +52,7 @@ export const PersonalityMeter: React.FC<PersonalityMeterProps> = ({ score }) => 
       {/* Visual meter */}
       <div className="max-w-md mx-auto">
         {/* Labels */}
-        <div className="flex justify-between items-center mb-4 text-sm font-primary font-medium">
+        <div className="flex justify-between items-center mb-4 text-sm font-primary font-medium text-black">
           <span className="text-center">
             🤫<br />Quiet Thinker
           </span>
@@ -84,11 +84,11 @@ export const PersonalityMeter: React.FC<PersonalityMeterProps> = ({ score }) => 
         <div className="text-center">
           <Badge 
             variant="secondary" 
-            className="px-4 py-2 text-base font-primary font-semibold bg-gradient-growth text-foreground border-0 mb-3"
+            className="px-4 py-2 text-base font-primary font-semibold bg-gradient-growth text-black border-0 mb-3"
           >
             {getEmoji()} {getLabel()}
           </Badge>
-          <p className="text-sm text-muted-foreground font-primary leading-relaxed">
+          <p className="text-sm text-black font-primary leading-relaxed">
             {score.description}
           </p>
         </div>

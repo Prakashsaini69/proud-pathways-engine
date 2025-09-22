@@ -52,11 +52,11 @@ export const CareerSuggestions: React.FC<CareerSuggestionsProps> = ({ careers })
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Target className="w-6 h-6 text-primary" />
-          <h3 className="text-2xl font-display font-semibold text-foreground">
+          <h3 className="text-2xl font-display font-semibold text-black">
             Careers Where You'll Thrive 🌟
           </h3>
         </div>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           Future paths that match your unique strengths and interests
         </p>
       </div>
@@ -77,12 +77,12 @@ export const CareerSuggestions: React.FC<CareerSuggestionsProps> = ({ careers })
               <div className="flex items-start gap-3 mb-4">
                 <div className="text-3xl">{career.icon}</div>
                 <div className="flex-1">
-                  <h4 className="font-display font-bold text-foreground text-lg mb-1">
+                  <h4 className="font-display font-bold text-black text-lg mb-1">
                     {career.title}
                   </h4>
                   <Badge 
                     variant="secondary" 
-                    className="text-xs bg-white/40 text-foreground border-white/30"
+                    className="text-xs bg-white/40 text-black border-white/30"
                   >
                     {career.sector}
                   </Badge>
@@ -93,21 +93,21 @@ export const CareerSuggestions: React.FC<CareerSuggestionsProps> = ({ careers })
               <div className="mb-4">
                 <div className="flex items-start gap-2 mb-2">
                   <Briefcase className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm font-primary font-medium text-foreground">
+                  <p className="text-sm font-primary font-medium text-black">
                     Why you'd love it:
                   </p>
                 </div>
-                <p className="text-sm text-muted-foreground font-primary leading-relaxed pl-6">
+                <p className="text-sm text-black font-primary leading-relaxed pl-6">
                   {career.fitReason}
                 </p>
               </div>
 
               {/* Daily life preview */}
               <div className="mb-4">
-                <p className="text-sm font-primary font-medium text-foreground mb-2">
+                <p className="text-sm font-primary font-medium text-black mb-2">
                   🌅 Your day might look like:
                 </p>
-                <p className="text-sm text-muted-foreground font-primary leading-relaxed italic">
+                <p className="text-sm text-black font-primary leading-relaxed italic">
                   "{career.dailyLifePreview}"
                 </p>
               </div>
@@ -116,7 +116,7 @@ export const CareerSuggestions: React.FC<CareerSuggestionsProps> = ({ careers })
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <BookOpen className="w-4 h-4 text-primary" />
-                  <p className="text-sm font-primary font-medium text-foreground">
+                  <p className="text-sm font-primary font-medium text-black">
                     Key subjects to focus on:
                   </p>
                 </div>
@@ -125,7 +125,7 @@ export const CareerSuggestions: React.FC<CareerSuggestionsProps> = ({ careers })
                     <Badge 
                       key={subject}
                       variant="outline" 
-                      className="text-xs bg-white/60 text-foreground border-primary/30 hover:bg-primary/10"
+                      className="text-xs bg-white/60 text-black border-primary/30 hover:bg-primary/10"
                     >
                       {subject}
                     </Badge>

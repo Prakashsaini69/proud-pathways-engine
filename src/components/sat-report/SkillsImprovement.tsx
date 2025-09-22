@@ -22,10 +22,10 @@ export const SkillsImprovement: React.FC<SkillsImprovementProps> = ({ skills }) 
   return (
     <Card className="shadow-card p-6">
       <div className="mb-6">
-        <h3 className="text-2xl font-display font-semibold text-foreground mb-2">
+        <h3 className="text-2xl font-display font-semibold text-black mb-2">
           Skills Improvement
         </h3>
-        <p className="text-muted-foreground font-primary text-sm mb-4">
+        <p className="text-black font-primary text-sm mb-4">
           These are the top skills I improved upon taking the Assessment Test between the two 
           dates mentioned on the right-hand side. Learn more about the test by clicking here.
         </p>
@@ -33,11 +33,11 @@ export const SkillsImprovement: React.FC<SkillsImprovementProps> = ({ skills }) 
         <div className="flex items-center gap-4 mb-6">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-purple-500 rounded"></div>
-            <span className="text-xs text-muted-foreground">Date: 12/12/2020</span>
+            <span className="text-xs text-black">Date: 12/12/2020</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-orange-400 rounded"></div>
-            <span className="text-xs text-muted-foreground">Year 12/11/2021</span>
+            <span className="text-xs text-black">Year 12/11/2021</span>
           </div>
         </div>
       </div>
@@ -69,20 +69,20 @@ export const SkillsImprovement: React.FC<SkillsImprovementProps> = ({ skills }) 
       <div className="grid md:grid-cols-3 gap-4">
         <div className="text-center p-4 bg-muted/20 rounded-lg">
           <div className="text-2xl mb-2">⏱️</div>
-          <div className="text-lg font-semibold text-foreground">2h 15m</div>
-          <div className="text-xs text-muted-foreground">Avg Test Duration</div>
+          <div className="text-lg font-semibold text-black">2h 15m</div>
+          <div className="text-xs text-black">Avg Test Duration</div>
         </div>
         
         <div className="text-center p-4 bg-muted/20 rounded-lg">
           <div className="text-2xl mb-2">💬</div>
-          <div className="text-lg font-semibold text-foreground">64%</div>
-          <div className="text-xs text-muted-foreground">Overall Engagement</div>
+          <div className="text-lg font-semibold text-black">64%</div>
+          <div className="text-xs text-black">Overall Engagement</div>
         </div>
         
         <div className="text-center p-4 bg-muted/20 rounded-lg">
           <div className="text-2xl mb-2">📊</div>
-          <div className="text-lg font-semibold text-foreground">85%</div>
-          <div className="text-xs text-muted-foreground">Progress Rate</div>
+          <div className="text-lg font-semibold text-black">85%</div>
+          <div className="text-xs text-black">Progress Rate</div>
         </div>
       </div>
     </Card>

@@ -15,10 +15,10 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
   return (
     <Card className="shadow-card p-6">
       <div className="text-center mb-8">
-        <h3 className="text-2xl font-display font-semibold text-foreground mb-2">
+        <h3 className="text-2xl font-display font-semibold text-black mb-2">
           Your Personality Superpowers
         </h3>
-        <p className="text-muted-foreground font-primary">
+        <p className="text-black font-primary">
           These traits make you uniquely amazing
         </p>
       </div>
@@ -39,10 +39,10 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
               <h4 className="font-display font-semibold text-foreground mb-1">
                 {trait.name}
               </h4>
-              <div className="text-2xl font-bold text-primary mb-2">
+              <div className="text-2xl font-bold text-black mb-2">
                 {trait.score}%
               </div>
-              <p className="text-xs text-foreground/70 font-primary leading-tight">
+              <p className="text-xs text-black font-primary leading-tight">
                 {trait.description}
               </p>
             </div>
@@ -52,7 +52,7 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
 
       {/* All Traits Progress Bars */}
       <div className="space-y-4">
-        <h4 className="text-lg font-display font-semibold text-foreground text-center mb-4">
+        <h4 className="text-lg font-display font-semibold text-black text-center mb-4">
           Your Complete Personality Profile
         </h4>
         
@@ -61,7 +61,7 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="text-lg">{trait.emoji}</span>
-                <span className="font-primary font-medium text-foreground">
+                <span className="font-primary font-medium text-black">
                   {trait.name}
                 </span>
                 {trait.isTopTrait && (
@@ -70,7 +70,7 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
                   </Badge>
                 )}
               </div>
-              <span className="font-primary font-semibold text-primary">
+              <span className="font-primary font-semibold text-black">
                 {trait.score}%
               </span>
             </div>
