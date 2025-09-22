@@ -111,7 +111,7 @@ export const PersonalityProfile: React.FC<PersonalityProfileProps> = ({ data }) 
                   <span className="text-2xl">{type.emoji}</span>
                   <div>
                     <h3 className="font-display font-bold text-lg">{type.name}</h3>
-                    <p className="text-sm opacity-80">{type.description}</p>
+                    <p className="text-sm text-muted-foreground">{type.description}</p>
                   </div>
                 </div>
                 <Badge variant="secondary" className="font-bold">

@@ -57,7 +57,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 className="h-2 mb-3 bg-white/40"
               />
               
-              <p className="text-sm text-muted-foreground font-primary italic">
+              <p className="text-sm text-foreground/80 font-primary italic">
                 {skill.description}
               </p>
             </div>
@@ -101,7 +101,7 @@ export const SkillStrengths: React.FC<SkillStrengthsProps> = ({ skills }) => {
                 className="h-2 mb-3 bg-white/40"
               />
               
-              <p className="text-sm text-muted-foreground font-primary italic">
+              <p className="text-sm text-foreground/80 font-primary italic">
                 {skill.description}
               </p>
             </div>

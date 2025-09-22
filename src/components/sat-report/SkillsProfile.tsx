@@ -133,7 +133,7 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
               <h4 className="font-primary font-semibold text-sm text-foreground mb-1">
                 {category.name}
               </h4>
-              <div className="flex items-center justify-center gap-1 text-xs text-muted-foreground">
+              <div className="flex items-center justify-center gap-1 text-xs text-foreground/70">
                 <span className="text-base">{category.icon}</span>
                 <span>{category.completedModules} Modules</span>
               </div>
@@ -153,7 +153,7 @@ export const SkillsProfile: React.FC<SkillsProfileProps> = ({ skills }) => {
             {category.skills.map((skill, skillIndex) => (
               <div key={skillIndex} className="space-y-1">
                 <div className="flex justify-between items-center">
-                  <span className="text-xs font-primary text-muted-foreground">
+                  <span className="text-xs font-primary text-foreground/70">
                     {skill.name}
                   </span>
                   <span className="text-xs font-semibold text-foreground">

@@ -68,10 +68,10 @@ export const AIInsights: React.FC<AIInsightsProps> = ({ insights }) => {
                       {insight.title}
                     </h4>
                   </div>
-                  {openInsights.includes(insight.type) ? (
-                    <ChevronDown className="w-5 h-5 text-muted-foreground transition-transform" />
+                   {openInsights.includes(insight.type) ? (
+                    <ChevronDown className="w-5 h-5 text-foreground/60 transition-transform" />
                   ) : (
-                    <ChevronRight className="w-5 h-5 text-muted-foreground transition-transform" />
+                    <ChevronRight className="w-5 h-5 text-foreground/60 transition-transform" />
                   )}
                 </div>
               </Card>

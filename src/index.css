@@ -10,14 +10,14 @@ All colors MUST be HSL.
   :root {
     /* Base colors - warm and welcoming */
     --background: 35 100% 99%;
-    --foreground: 215 25% 27%;
+    --foreground: 215 35% 20%; /* Darker for better contrast */
 
     /* Card system - soft and inviting */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 215 35% 20%; /* Darker for better contrast */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 215 35% 20%; /* Darker for better contrast */
 
     /* Brand colors - celebratory and inspiring */
     --primary: 217 91% 60%; /* Soft blue */
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --secondary-foreground: 165 25% 25%;
 
     --muted: 35 100% 97%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 215 25% 35%; /* Darker for better contrast */
 
     --accent: 320 65% 75%; /* Coral pink */
     --accent-foreground: 320 25% 25%;

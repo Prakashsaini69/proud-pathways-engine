@@ -42,7 +42,7 @@ export const BigFiveTraits: React.FC<BigFiveTraitsProps> = ({ traits }) => {
               <div className="text-2xl font-bold text-primary mb-2">
                 {trait.score}%
               </div>
-              <p className="text-xs text-muted-foreground font-primary leading-tight">
+              <p className="text-xs text-foreground/70 font-primary leading-tight">
                 {trait.description}
               </p>
             </div>
